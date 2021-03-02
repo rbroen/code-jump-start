@@ -1,0 +1,19 @@
+demo:
+  build: .
+  dockerfile: docker/Dockerfile
+  ports:
+   - "80:80"
+  volumes:
+   - ./docker/000-default.conf:/etc/apache2/sites-available/000-default.conf
+   - .:/var/www/html
+   - ./docker/php-development.ini:/usr/local/etc/php/conf.d/php-development.ini
+
+demo_mysql:
+  image: mysql:latest
+  ports:
+    - 3306:3306
+  environment:
+    MYSQL_ROOT_PASSWORD: secure
+    MYSQL_DATABASE: demo
+    MYSQL_USER: demo
+    MYSQL_PASSWORD: test123

@@ -1,0 +1,29 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'doctrine' => [
+        'connection' => [
+            // default connection name
+            'orm_default' => [
+                'params' => [
+                    'host'     => 'demo_mysql',
+                    'port'     => '3306',
+                    'user'     => 'demo',
+                    'password' => 'test123',
+                    'dbname'   => 'demo',
+                    // false: In production we will be generating the proxy classes by hand, there should be NO auto generation
+                    // true: In development we will (ALWAYS) auto generate the proxy classes
+                    'generateProxies' => true,
+                    'driverOptions' => [
+                        1002 => 'SET NAMES "UTF8"'
+                    ]
+                ],
+                'doctrine_type_mappings' => [
+                    'enum' => 'string'
+                ],
+            ],
+        ],
+    ],
+];
