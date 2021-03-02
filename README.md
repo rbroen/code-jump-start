@@ -1,8 +1,8 @@
 # A code jump start with Laminas Mezzio
 
-This project is meant as a starting point for other projects.
+This project is a starting point for other projects.
 
-It will contain basics like:
+The main components are:
 - Laminas Mezzio
 - Doctrine2
 - Working migrations with a sample entity
