@@ -1,20 +1,18 @@
-html {
-  font-size: 16px;
-}
 
+html {
+    font-size: 16px;
+}
 @media (max-width: 900px) {
-  html {
-    font-size: 15px;
-  }
+    html { font-size: 15px; }
 }
 @media (max-width: 400px) {
-  html {
-    font-size: 13px;
-  }
+    html { font-size: 13px; }
 }
+
 body {
   margin: 0;
   font-family: sans-serif;
+
 }
 
 div#page {
@@ -41,5 +39,3 @@ div#footer {
   background-color: #153903;
   padding: 10px 20px;
 }
-
-/*# sourceMappingURL=style.css.map */
