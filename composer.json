@@ -31,6 +31,7 @@
     "require": {
         "php": "^7.4",
         "ext-json": "*",
+        "ext-pdo_mysql": "*",
         "composer/package-versions-deprecated": "^1.10.99",
         "laminas/laminas-component-installer": "^2.1.2",
         "laminas/laminas-config-aggregator": "^1.2",
@@ -43,7 +44,8 @@
         "mezzio/mezzio-helpers": "^5.3",
         "mezzio/mezzio-laminasrouter": "^3.0.1",
         "mezzio/mezzio-laminasviewrenderer": "^2.2",
-        "roave/psr-container-doctrine": "^2.2"
+        "roave/psr-container-doctrine": "^2.2",
+        "somecoding/laminas-doctrine-encrypt": "^2.2"
     },
     "require-dev": {
         "laminas/laminas-development-mode": "^3.2",

@@ -12,6 +12,8 @@ RUN a2enmod rewrite
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
 
+RUN docker-php-ext-install pdo_mysql
+
 WORKDIR /var/www/html
 
 

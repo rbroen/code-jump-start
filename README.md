@@ -19,6 +19,8 @@ cd my-project
 # Make changes to the local documents whenever you need to.
 cp config/autoload/local.php.dist config/autoload/local.php
 cp config/autoload/development.local.php.dist config/autoload/development.local.php
+chmod a+w data/cache/DoctrineEntityProxy
+chmod a+w src/App/src/Migrations
 # Consider updating the name of both containers in the docker-compose.yml file.
 # Build and run the containers.
 docker-compose up
