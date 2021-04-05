@@ -31,6 +31,7 @@ $aggregator = new ConfigAggregator([
     \Mezzio\ConfigProvider::class,
     \Mezzio\Router\ConfigProvider::class,
     \Laminas\Diactoros\ConfigProvider::class,
+    \Keet\Encrypt\ConfigProvider::class,
 
     // Default App module config
     App\ConfigProvider::class,

@@ -40,7 +40,7 @@ class ConfigProvider
                 'my_entity' => [
                     'class' => AnnotationDriver::class,
                     'cache' => 'array',
-                    'paths' => __DIR__ . '/Entity',
+                    'paths' => [__DIR__ . '/Entity'],
                 ],
             ],
         ];
